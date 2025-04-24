@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
 	font-family: 'Classic';
 	src: url(‘/font/Classic-Regular.otf’) format(‘otf’)
@@ -35,6 +39,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 5; /*temporaire demander à florian*/
 }
 
 nav a {
@@ -55,7 +60,7 @@ nav a:hover {
     position: absolute;
     background-color: #E7D8C9;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 3px 3px 8px #C0B0A1;
     padding: 10px;
 }
 
@@ -71,9 +76,8 @@ nav a:hover {
 }
 
 .submenu a:hover {
-    background-color: #6D5959;
-    color: white;
-    font-weight: normal;
+    background-color: #D3C2B0;
+    font-weight: bold;
     font-family: 'Classic';
     font-size: medium;
 }
@@ -164,6 +168,46 @@ nav a:hover {
     border-radius: 25px;
 }
 
+#image {
+    position: relative;
+    z-index: 1;
+}
+
+.hidden {
+    background-color: black;
+    width: 500px;
+    height: 350px;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 50%;
+    display: none;
+}
+
+#image a {
+    position: absolute;
+    top: 160px;
+    left: 195px;
+    text-decoration: none;
+    color:#E7D8C9;
+    font-size: 25px;
+    font-family: 'Classic';
+    background-color: #6D5959;
+    padding: 7px 13px;
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
+    display: none;
+}
+
+#image:hover .hidden, #image:hover a {
+    display: block;
+}
+
+#image a:hover {
+    font-weight: bold;
+}
+
 /* page 2 css */
 
 /* section 1 */
@@ -199,7 +243,15 @@ nav a:hover {
     background-color: white;
     border-radius: 25px;
     width: 70%;
+    transition: all 0.2s ease-in-out;
+}
 
+.card-exp:hover {
+    box-shadow: 8px 8px 12px #EDE4DC;
+}
+
+.pair:hover {
+    box-shadow: 8px 8px 12px #D5CBC1;
 }
 
 .pair {
@@ -237,11 +289,11 @@ nav a:hover {
     background-color: white;
     border-radius: 25px;
     width: 70%;
-
+    transition: all 0.2s ease-in-out;
 }
 
 .card-educ:hover {
-    transform: scale(1.05);
+    box-shadow: 8px 8px 12px #4B3F3F;
 }
 
 .card-educ .educ-left {
@@ -300,6 +352,25 @@ nav a:hover {
     font-weight: bold;
 }
 
+/* up button css */
+
+#up {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #E7D8C9;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* footer css */
 
 footer {
@@ -351,5 +422,5 @@ footer a:hover {
 }
 
 footer img:hover {
-    transform: scale(1.15);
+    transform: scale(1.2);
 }
