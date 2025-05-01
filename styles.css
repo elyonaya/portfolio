@@ -108,19 +108,26 @@ nav a:hover {
 /* section 1 */
 
 #moodboard {
+    background-color: white;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin-top: 3%;
-    background-image: url('https://picsum.photos/800/500');
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: flex-end;
+    background-color: #F6F0EB;
+    margin-top: 2%;
+    position: relative;
+}
+
+#moodboard h1 {
+    font-size: 30px;
 }
 
 #down {
-    margin-bottom: 100%;
+    position: absolute;
+    bottom: 65px;
+    left: 612px;
 }
 
 
@@ -142,6 +149,7 @@ nav a:hover {
 
 #presentation img {
     border-radius: 25px;
+    height: 450px;
 }
 
 #presentation-right {
@@ -481,7 +489,7 @@ footer {
     justify-content: space-evenly;
     flex-direction: column;
     padding: 10px;
-    height: 150px;
+    height: 200px;
 }
 
 #top {
@@ -495,6 +503,7 @@ footer {
     justify-content: center;
     width: 100%;
     gap: 20px;
+    margin-top: 20px;
 }
 
 footer img {
@@ -532,10 +541,8 @@ footer img:hover {
     }
 
     #nav-top {
-        display: flex;
-        width: 100%;
-        justify-content: space-evenly;
-        align-items: center;
+        flex-direction: row;
+        gap: 25px;
     }
     
 
@@ -578,6 +585,7 @@ footer img:hover {
     
     #presentation img {
         border-radius: 25px;
+        height: auto;
         width: 100%;
         margin-bottom: 40px;
     }
