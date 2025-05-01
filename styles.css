@@ -42,6 +42,14 @@ nav {
     z-index: 5; /*temporaire demander à florian*/
 }
 
+#nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+    width: 100%;
+}
+
 nav a {
     text-decoration: none;
 }
@@ -84,6 +92,10 @@ nav a:hover {
 
 .menu:hover .submenu {
     display: block;
+}
+
+#nav-responsive {
+    display: none;
 }
 
 /* page 1 css */
@@ -194,7 +206,7 @@ nav a:hover {
 
 .projet-card img {
     border-radius: 10px;
-    width: 600px;
+    width: 500px;
 }
 
 #image {
@@ -204,7 +216,7 @@ nav a:hover {
 
 .hidden {
     background-color: black;
-    width: 600px;
+    width: 500px;
     height: 99%;
     border-radius: 10px;
     position: absolute;
@@ -216,8 +228,8 @@ nav a:hover {
 
 #image a {
     position: absolute;
-    top: 140px;
-    left: 235px;
+    top: 110px;
+    left: 190px;
     text-decoration: none;
     color:#E7D8C9;
     font-size: 25px;
@@ -254,12 +266,13 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    margin: 0 2% 0 16%;
+    margin: 0 0 0 16%;
     /* width: 1000px; */
 }
 
 #cv img {
-    height: 400px;
+    height: 200px;
+    transform: scale(2);
 }
 
 .card-exp {
@@ -346,7 +359,8 @@ nav a:hover {
 }
 
 #education img {
-    height: 400px;
+    height: 200px;
+    transform: scale(2);
 }
 
 #education p {
@@ -509,14 +523,40 @@ footer img:hover {
 /* responsive css */
 
 @media only screen and (max-width: 480px) {
+
     nav {
-        width: 375px;
-        font-size: small;
+        width: 370px;
+        font-size: medium;
+        flex-direction: column;
+        height: 10%;
+    }
+
+    #nav-top {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+
+    .menu {
+        display: none;
     }
 
     #nav-links {
         flex-direction: column;
         gap: 5px;
+    }
+
+    #nav-responsive {
+        display: flex;
+        font-size: large;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    #nav-responsive a {
+        color:#4B3F3F;
     }
 
     /* page accueil */
@@ -533,7 +573,7 @@ footer img:hover {
     }
     
     #presentation p {
-        font-size: 15px;
+        font-size: 17px;
     }
     
     #presentation img {
@@ -547,7 +587,7 @@ footer img:hover {
     }
 
     #presentation a {
-        font-size: 20px;
+        font-size: 22px;
         display: block;
         position: static;
         margin-top: 15px;
@@ -568,7 +608,7 @@ footer img:hover {
     }
     
     #projets p {
-        margin-bottom: 15px; 
+        margin-bottom: 15px;
     }
 
     .projet-card {
@@ -589,7 +629,7 @@ footer img:hover {
     }
     
     #image a {
-        font-size: 20px;
+        font-size: 22px;
         display: block;
         position: static;
         width: 30%;
@@ -602,12 +642,20 @@ footer img:hover {
 
     /* page 2 cv */
 
+    #cv h1, #education h1, #competences h1 {
+        font-size: 28px;
+    }
+
+    #cv p, #education p {
+        font-size: 17px;
+    }
+
     /* section 1 */
 
     #cv {
         width: auto;
         height:auto;
-        padding-top: 65px;
+        padding-top: 100px;
     }
     
     #cv .card-exp {
@@ -621,8 +669,13 @@ footer img:hover {
     }
 
     #align {
-        gap: 25px;
-        margin: 0 2% 0 5%;
+       gap: 0;
+       margin: 0 0 0 25px;
+       width: 85%;
+    }
+
+    #align img {
+        display: none;
     }
 
     #competences a {
@@ -649,11 +702,8 @@ footer img:hover {
     }
 
     #education h1 {
-        margin-top: 30px;
-    }
-
-    #education p {
-        font-size: 15px;
+        margin-top: 40px;
+        margin-bottom: 10px;
     }
 
     /* section 3 */
@@ -681,13 +731,15 @@ footer img:hover {
     }
       
     #competences img {
-        width: 55px;
-        height: 55px;
+        width: 65px;
+        height: 65px;
         margin: 15px ;
     }
 
     #competences a {
         margin: 10px 0 20px 0;
+        font-size: 22px;
+        padding: 8px 15px;
     }
 
     /* page 3 projet */
@@ -697,8 +749,21 @@ footer img:hover {
         height: auto;
     }
 
+    #projet h1 {
+        margin-top: 100px;
+        font-size: 28px;
+    }
+
+    #projet h2 {
+        font-size: 25px;
+    }
+
+    #projet p {
+        font-size: 17px;
+    }
+
     #first-img {
-        margin-top: 25px;
+        margin-top: 15px;
     }
 
     #projet .step {
@@ -714,6 +779,8 @@ footer img:hover {
     #projet a {
         margin: 15px;
         margin-bottom: 30px;
+        font-size: 22px;
+        padding: 8px 15px;
     }
 
     /* footer */
@@ -735,6 +802,8 @@ footer img:hover {
         font-size: medium;
     }
 }
+
+/* animation  */
 
 @keyframes scroll {
     0% {
