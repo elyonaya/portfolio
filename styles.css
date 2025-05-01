@@ -104,7 +104,6 @@ nav a:hover {
     color: #4B3F3F;
 }
 
-
 /* section 1 */
 
 #presentation {
@@ -118,6 +117,10 @@ nav a:hover {
     padding: 0 5%;
     gap: 5%;
     padding-bottom: 50px;
+}
+
+#presentation img {
+    display: none;
 }
 
 #presentation h2 {
