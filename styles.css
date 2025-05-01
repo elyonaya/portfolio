@@ -88,6 +88,11 @@ nav a:hover {
 
 /* page 1 css */
 
+#presentation p, #projet p, footer p {
+    color: #4B3F3F;
+}
+
+
 /* section 1 */
 
 #moodboard {
@@ -96,11 +101,16 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     margin-top: 3%;
+    background-image: url('https://picsum.photos/800/500');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: flex-end;
 }
 
-#moodboard img {
-    border-radius: 25px;
+#down {
+    margin-bottom: 100%;
 }
+
 
 /* section 2 */
 
@@ -122,9 +132,28 @@ nav a:hover {
     border-radius: 25px;
 }
 
-#presentation-text {
+#presentation-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     margin-left: 5%;
     width: 40%;
+}
+
+#presentation a {
+    background-color: #E7D8C9;
+    color: #4B3F3F;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#presentation a:hover {
+    font-weight: bold;
 }
 
 /* section 3 css */
@@ -140,12 +169,11 @@ nav a:hover {
 #projets h2 {    
     text-align: center;
     font-size: 30px;
-    margin: 20px 0;
+    margin-bottom: 50px;
 }
 
 #projets p {
-    margin-bottom: 25px; 
-    color: black;  
+    margin-bottom: 25px;
 }
 
 #projets-img {
@@ -165,7 +193,8 @@ nav a:hover {
 }    
 
 .projet-card img {
-    border-radius: 25px;
+    border-radius: 10px;
+    width: 600px;
 }
 
 #image {
@@ -175,9 +204,9 @@ nav a:hover {
 
 .hidden {
     background-color: black;
-    width: 500px;
-    height: 350px;
-    border-radius: 25px;
+    width: 600px;
+    height: 99%;
+    border-radius: 10px;
     position: absolute;
     top: 0;
     transition: all 0.3s ease-in-out;
@@ -187,8 +216,8 @@ nav a:hover {
 
 #image a {
     position: absolute;
-    top: 160px;
-    left: 195px;
+    top: 140px;
+    left: 235px;
     text-decoration: none;
     color:#E7D8C9;
     font-size: 25px;
@@ -254,6 +283,10 @@ nav a:hover {
     box-shadow: 8px 8px 12px #D5CBC1;
 }
 
+.impair {
+    color: #4B3F3F;
+}
+
 .pair {
     background-color: #6D5959;
     color: #F6F0EB;
@@ -316,6 +349,10 @@ nav a:hover {
     height: 400px;
 }
 
+#education p {
+    color: #4B3F3F;
+}
+
 /* section 3 css */
 
 #competences {
@@ -329,7 +366,7 @@ nav a:hover {
 
 #competences img {
     height: 75px;
-    margin: 15px;
+    margin: 15px 25px;
     transition: all 0.2s ease-in-out;
 }
 
@@ -369,8 +406,9 @@ nav a:hover {
     justify-content: center;
     width: 85%;
     gap: 25px;
-    margin: 40px 0;
+    margin: 50px 0;
 }
+
 
 .step-text h2 {
     text-align: center;
@@ -378,6 +416,7 @@ nav a:hover {
 
 .step img {
     border-radius: 15px;
+    width: 650px;
 }
 
 #projet a {
@@ -409,10 +448,15 @@ nav a:hover {
     padding: 15px;
     border-radius: 50%;
     transition: all 0.2s ease-in-out;
-    z-index: 10;
+    z-index: 5;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+#up:hover {
+    transform: scale(1.2);
 }
 
 /* footer css */
@@ -439,13 +483,6 @@ footer {
     gap: 20px;
 }
 
-#bottom a {
-    text-decoration: none;
-    color: black;
-    transition: all 0.2s ease-in-out;
-} 
-
-
 footer img {
     width: 40px;
     transition: all 0.2s ease-in-out;
@@ -460,14 +497,10 @@ footer img {
     background-color: white;
 } 
 
-
 .bg-light-brown {
     background-color: #F6F0EB;
 }
 
-footer a:hover {
-    font-weight: bold;
-}
 
 footer img:hover {
     transform: scale(1.2);
@@ -490,11 +523,6 @@ footer img:hover {
 
     /* section 1 */
 
-    #moodboard img {
-        width: 95%;
-        height: 80%;
-    }
-
     /* section 2 */
 
     #presentation {
@@ -514,9 +542,17 @@ footer img:hover {
         margin-bottom: 40px;
     }
     
-    #presentation-text {
+    #presentation-right {
         width: 100%;
     }
+
+    #presentation a {
+        font-size: 20px;
+        display: block;
+        position: static;
+        margin-top: 15px;
+    }
+
 
     /* section 3 */
 
@@ -543,7 +579,6 @@ footer img:hover {
     #projets img {
         width: 100%;
         height: 100%;
-        border-radius: 25px;
     }
 
     #image {
@@ -579,6 +614,10 @@ footer img:hover {
         flex-direction: column;
         gap: 10px;
         width: 79%;
+    }
+
+    .card-exp .exp-left {
+        width: 100%;
     }
 
     #align {
@@ -628,20 +667,54 @@ footer img:hover {
         margin: 30px 0 15px 0;
     }
 
-    #gallery {
-        flex-wrap: wrap;
-        text-align: center;
-    }    
+    /* banniere défilante */
 
+    .gallery {
+        width: 100%;
+        overflow: hidden;
+    }
+      
+    .gallery-content {
+        display: flex;
+        width: fit-content;
+        animation: scroll 20s linear infinite;
+    }
+      
     #competences img {
         width: 55px;
-        height: auto;
+        height: 55px;
+        margin: 15px ;
     }
 
     #competences a {
-        margin: 15px 0 20px 0;
+        margin: 10px 0 20px 0;
     }
 
+    /* page 3 projet */
+
+    #projet {
+        width: auto;
+        height: auto;
+    }
+
+    #first-img {
+        margin-top: 25px;
+    }
+
+    #projet .step {
+        flex-direction: column;
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    #projet img {
+        width: 105%;
+    }
+
+    #projet a {
+        margin: 15px;
+        margin-bottom: 30px;
+    }
 
     /* footer */
 
@@ -662,3 +735,12 @@ footer img:hover {
         font-size: medium;
     }
 }
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
