@@ -107,49 +107,21 @@ nav a:hover {
 
 /* section 1 */
 
-#moodboard {
-    background-color: white;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 3%;
-    background-color: #F6F0EB;
-    margin-top: 2%;
-    position: relative;
-}
-
-#moodboard h1 {
-    font-size: 30px;
-}
-
-#down {
-    position: absolute;
-    bottom: 65px;
-    left: 612px;
-}
-
-
-/* section 2 */
-
 #presentation {
     height: 100vh;
-    background-color: white;
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 5%;
     gap: 5%;
+    padding-bottom: 50px;
 }
 
 #presentation h2 {
     font-size: 30px;
-}
-
-#presentation img {
-    border-radius: 25px;
-    height: 450px;
 }
 
 #presentation-right {
@@ -158,8 +130,9 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin-left: 5%;
-    width: 40%;
+    margin-left: 40%;
+    margin-bottom: 4%;
+    width: 50%;
 }
 
 #presentation a {
@@ -176,7 +149,7 @@ nav a:hover {
     font-weight: bold;
 }
 
-/* section 3 css */
+/* section 2 css */
 
 #projets {
     height: 100vh;
@@ -570,17 +543,19 @@ footer img:hover {
 
     /* section 1 */
 
-    /* section 2 */
-
     #presentation {
         flex-direction: column;
         width: auto;
         height:auto;
         padding: 50px;
+        background-color: white;
+        background-image: none;
+        margin-top: 18%;
     }
     
     #presentation p {
         font-size: 17px;
+
     }
     
     #presentation img {
@@ -592,6 +567,7 @@ footer img:hover {
     
     #presentation-right {
         width: 100%;
+        margin: 0;
     }
 
     #presentation a {
@@ -602,7 +578,7 @@ footer img:hover {
     }
 
 
-    /* section 3 */
+    /* section 2 */
 
     #projets {
         flex-direction: column;
@@ -808,6 +784,7 @@ footer img:hover {
 
     footer #bottom {
         font-size: medium;
+        text-align: center;
     }
 }
 
