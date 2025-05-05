@@ -562,6 +562,7 @@ footer img:hover {
     }
     
     #presentation img {
+        display: block;
         border-radius: 25px;
         height: auto;
         width: 100%;
