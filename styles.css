@@ -7,8 +7,8 @@ html {
 }
 
 @font-face {
-	font-family: 'Classic';
-	src: url(‘/font/Classic-Regular.otf’) format(‘otf’)
+    font-family: 'Classic';
+    src: url('./font/Classic-Regular.otf') format('opentype');
 }
 
 .abril {
