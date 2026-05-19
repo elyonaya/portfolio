@@ -8,7 +8,7 @@ html {
 
 @font-face {
     font-family: 'Classic';
-    src: url('./font/Classic-Regular.otf') format('opentype');
+    src: url('./font/font-naya.otf') format('opentype');
 }
 
 .abril {
