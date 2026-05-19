@@ -239,7 +239,7 @@ nav a:hover {
 /* section 1 */
 
 #cv {
-    margin-top: 8%;
+    margin: 8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -252,18 +252,17 @@ nav a:hover {
     justify-content: center;
     gap: 50px;
     margin: 0 0 0 16%;
-    /* width: 1000px; */
 }
 
 #cv img {
     height: 200px;
     transform: scale(2);
+    opacity: 0;
 }
 
 .card-exp {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 30px 0;
     padding: 25px;
     gap: 50px;
@@ -294,6 +293,14 @@ nav a:hover {
     color: white;
 }
 
+.exp-left {
+    width: 65%;
+}
+
+.pair .exp-left {
+    width: 45%;
+}
+
 .card-exp .exp-left p {
     margin: 10px 0;
 }
@@ -308,6 +315,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 25px 0 25px 0;
 }
 
 .card-educ {
@@ -346,6 +354,7 @@ nav a:hover {
 #education img {
     height: 200px;
     transform: scale(2);
+    opacity: 0;
 }
 
 #education p {
