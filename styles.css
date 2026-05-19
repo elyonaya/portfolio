@@ -418,6 +418,10 @@ nav a:hover {
     width: 650px;
 }
 
+#img-chartegraphique {
+    width: 350px;
+}
+
 #projet a {
     background-color: #6D5959;
     color: #F6F0EB;
