@@ -31,26 +31,25 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     background-color: white;
     padding: 10px;
     height: 50px;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 5; /*temporaire demander à florian*/
 }
 
 #nav-top {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 250px;
-    width: 100%;
+    justify-content: space-between;
+    width: 90%;
 }
 
 nav a {
+    color: inherit;
     text-decoration: none;
 }
 
