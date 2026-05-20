@@ -161,6 +161,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(#CEB8A7 1%, #F6F0EB);
 }
 
 #projets h2 {    
@@ -197,6 +198,11 @@ nav a:hover {
 #image {
     position: relative;
     z-index: 1;
+}
+
+#img-homefromnaya {
+    height: 250px;
+    width: fit-content;
 }
 
 .hidden {
@@ -386,6 +392,10 @@ nav a:hover {
 
 /* page 3 css */
 
+.projet-title {
+    font-size: 30px;
+}
+
 #projet {
     margin-top: 8%;
     display: flex;
@@ -416,6 +426,10 @@ nav a:hover {
 
 #img-chartegraphique {
     width: 350px;
+}
+
+.img-fromnaya {
+    height: 380px;
 }
 
 #projet a {
@@ -452,6 +466,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
+    opacity: 50%;
 }
 
 #up:hover {
