@@ -697,14 +697,18 @@ footer img:hover {
 
     /* section 1 */
 
+    #cv, #education, #competences {
+        padding-bottom: 50px;
+    }
+
     #cv h1 {
-        margin-top: 100px;
+        margin-top: 10px;
     }
 
     #cv {
         width: auto;
         height:auto;
-        padding-top: 100px;
+        padding-top: 120px;
     }
     
     #cv .card-exp {
@@ -785,7 +789,7 @@ footer img:hover {
     }
 
     #competences a {
-        margin: 10px 0 20px 0;
+        margin-top: 10px;
         font-size: 22px;
         padding: 8px 15px;
     }
