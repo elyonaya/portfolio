@@ -11,7 +11,7 @@
     <title>Mon portfolio</title>
 </head>
 
-<body">
+<body>
 
 <nav>
         <div id="nav-top">
@@ -33,12 +33,19 @@
         <a href="#top" class="classic">CONTACT</a> 
         
         </div>
-    </div>
 
-        <div id="nav-responsive" class="classic">
-            <a href="projet.html">TES P'TITES MAINS VERTES</a>
-            <a href="projet-z.html">ZENMOM</a>
+        <button id="burger">☰</button>
+
+        <div id="mobile-menu">
+          <a href="cv.html">Mon CV</a>
+          <a href="projet-n.html">From Naya</a>
+          <a href="projet.html">Tes p'tites mains vertes</a>
+          <a href="projet-z.html">ZenMom</a>
+          <a href="#top">Contact</a>
         </div>
+    
+      </div>
+
     </nav>
 
     <main>
@@ -108,6 +115,18 @@
 
 
     </main>
+
+   <script>
+            const burger = document.getElementById('burger');
+            const menu = document.getElementById('mobile-menu');
+
+            burger.addEventListener('click', () => {
+            menu.style.display =
+            menu.style.display === 'flex'
+            ? 'none'
+            : 'flex';
+            });
+    </script> 
     
 </body>
 
